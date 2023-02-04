@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --cor1:#B89088;
+            --cor2:#E6D4D2;
+            --cor3:#ECE6DB;
+            --cor4:#E8D6CA;
+            --cor5:#DD9E8D;
+        }
+        h1{
+            color: var(--cor1);
+            background-color: var(--cor3);
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px #b890887c;
+        }
+        h1:hover{
+            animation-duration: 2s;
+            animation-name: slide;
+            width: 500px;
+        }
+        h1:not(:hover){
+            animation-duration: 2s;
+            animation-name: slideout;
+            width: 200px;
+        }
+        @keyframes slide{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+        @keyframes slideout{
+            from{
+                width: 500px;
+            }
+            to{
+                width: 200px;
+            }
+        }
+
+        footer{
+            color: var(--cor3);
+            background-color: var(--cor1);
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            bottom: 0;
+            position: fixed;
+        }
+        body{
+            background-color: var(--cor4);
+            margin: 0;
+            font-family: Consolas;
+        }
+        footer:hover{
+            animation-duration: 1.5s;
+            animation-name: slidefooter;
+            height: 200px;
+        }
+        footer:not(:hover){
+            animation-duration: 1.5s;
+            animation-name: slidefooterout;
+            height: 50px;
+        }
+        @keyframes slidefooter {
+            from{
+                height: 50px;
+            }
+            to{
+                height: 200px;
+            }
+        }
+        @keyframes slidefooterout {
+            from{
+                height: 200px;
+            }
+            to{
+                height: 50px;
+            }
+        }
+        img{
+            width: 150px;
+            border-radius: 50%;
+            background-color: aqua;
+        }
+        p{
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Oi Clarinha
+        </h1>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        Feito por Lucas Kendy <br>
+        <div class="foot" id="pe"><p>Minhas redes sociais</p></div>
+        <div class="foot"><img src="eu.jpg" alt=""></div>
+        
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #DD9E8D;
+            border: 5px solid #B89088;
+            display: inline-block;
+            
+        }
+        div:hover{
+            background-color: #ECE6DB;
+        }
+        div>p{
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            color: white;
+            font-family: monocraft;
+            font-size: 1.5em;
+        }
+        p::after{
+            background-color: aqua;
+            content: '->';
+        }
+        p::before{
+            background-color: aqua;
+            content: '<-';
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <h1>Hover</h1>
+    <div><p>p dentro da div</p></div>
+    <p>p fora da div</p>
+</body>
+</html>

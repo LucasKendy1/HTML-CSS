@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+    --cor1:#3D4D63;
+    --cor2:#B2E7E8;
+    --cor3:#8FB9AA;
+    --cor4:#F2D096;
+    --cor5:#ED8975;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-family: 'Quicksand';
+}
