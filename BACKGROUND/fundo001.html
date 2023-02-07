@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+    <style>
+        .quadrado{
+            border:1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: rgb(154, 74, 230);
+        }
+        .retangulo{
+            background-image: url('IMAGENS/wallpaper002.jpg');
+        }
+        div#q1{
+            background-color: aquamarine;
+        }
+        div#q2{
+            background-image: linear-gradient(aquamarine,purple);
+        }
+        div#q3{
+            background-image: url('IMAGENS/pattern003.png');
+        }
+        div#q4{
+            border:1px solid black;
+            width: 915px;
+            height: 400px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+    <div class="retangulo" id="q4"></div>
+</body>
+</html>
