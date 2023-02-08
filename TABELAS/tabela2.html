@@ -30,14 +30,20 @@
             border-radius:10px;
             
         }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #171B42;
+        }
+        tbody > tr:nth-child(2n){/*odd/2n/2n-1/even*/
+            background-color:  #2a317ead;
+        }
         td{
             width: 50px;
             height: 200px;
         }
         table{
-            margin: auto;
-            display: block;
-            
+            position: relative;
         }
         .ssm{
             background-color: var(--cor1);
@@ -63,15 +69,22 @@
         img:hover{
             width: 120px;
         }
+        caption{
+            font-size: 25pt;
+            font-weight: 800;
+            background-color: var(--cor3);
+            border-radius: 5px;
+
+        }
     </style>
 </head>
 <body>
-    <h1>Tier List Genshin Impact</h1>
     <main>
         <table>
+            <caption>Genshin Tier List</caption>
             <thead>
                 <th>Tier</th>
-                <th>Personagem</th>
+                <th>Personagem</th><!--scope='col/row'-->
             </thead>
             <tbody>
                 <tr >
@@ -110,6 +123,14 @@
             -->
             
         </table>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quia cumque veritatis, alias voluptate placeat dolorum eveniet necessitatibus est, perspiciatis nam accusamus! Error ipsum repellat repellendus! Maiores ipsum corporis est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ut recusandae, esse reprehenderit eaque maiores natus facere totam nisi atque eos est aliquid. Eos temporibus, asperiores voluptatibus labore in dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta possimus beatae unde at quo neque eaque iusto iure reiciendis omnis aspernatur ducimus dolorum sint vero, nostrum ipsa aperiam a exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente veniam id ipsam dicta esse sint ab fugiat, repellat repudiandae dolorum! Aliquid veritatis, temporibus perferendis repudiandae deserunt quis facere ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat animi velit enim magni quod molestiae. In laudantium nobis placeat, dolorum magnam blanditiis accusantium autem laboriosam est culpa beatae earum.
+        Vero, quae quisquam. Doloremque consequatur esse iste ad minima iure officia placeat voluptatibus rerum velit? Animi voluptates laboriosam similique, suscipit sunt dolore voluptas libero commodi illo officia, illum quo totam.
+        Dolores animi iusto praesentium aliquam sequi nesciunt culpa quis, sunt tempora perspiciatis dolor commodi rem quia? Nobis sequi ea autem magnam, incidunt, deserunt eligendi assumenda magni est facere modi nulla!
+        Repudiandae tenetur, voluptate, reiciendis minima blanditiis, recusandae adipisci ad ex obcaecati rem sequi pariatur placeat animi repellendus? Sed, alias? Quas accusamus animi quo quod rerum? Cum incidunt rerum quasi minus.
+        Explicabo praesentium, non accusantium minima impedit perferendis tempore et rem at similique consequatur ex deleniti doloremque! Qui excepturi consequatur eos eius officiis, praesentium molestias suscipit minus velit. Quibusdam, id enim?
+        Minima minus delectus sapiente, voluptatum assumenda, quia placeat quidem error, corrupti nemo qui aspernatur fugit vitae mollitia quam consequatur labore repellendus. Fugit necessitatibus culpa ea, quasi deleniti ipsam sunt facilis.
+        Explicabo at quaerat recusandae maiores, dolor veniam nemo quod fugiat, ducimus atque qui, consequatur odit ea delectus? In libero dolores, vero, a fugiat aut quia voluptatum reiciendis distinctio sint quae.</p>
     </main>
 </body>
 </html>
