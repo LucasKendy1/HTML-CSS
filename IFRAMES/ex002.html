@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        iframe{
+            width: 95vw;
+            height: 50vh;
+            margin: auto;
+        }
+        div{
+            margin: auto;
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando iframes com links de lista</h1>
+    <p>Escola a seguir</p>
+    <ul>
+        <a href="https://lucaskendy1.github.io/D9/D10.html" target="frame">
+            <li>link 1</li>
+        </a>
+        <a href="pag001.html" target="frame">
+            <li>Voltar</li>
+        </a>
+        <a href="https://lucaskendy1.github.io/D9/D10.html" target="frame">
+            <li>Avançar</li>
+        </a>
+    </ul>
+    <div>
+        <iframe srcdoc="<h1>Escolha um link acima</h1><img src='a.jpg'></img>" name="frame" frameborder="0">
+            Error404
+        </iframe>
+    </div>
+    
+</body>
+</html>
