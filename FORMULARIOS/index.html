@@ -22,13 +22,13 @@
         h1{
             text-align: center;
             margin: 50px auto;
-            color: var(--cor4);
-            background-color: var(--cor5);
+            color: var(--cor2);
+            background-color: var(--cor3);
             width: 150px;
             height: 50px;
             line-height: 50px;
-            border-radius: 10px;
-            
+            border-radius: 50px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
         }
         p{
             color: var(--cor3);
@@ -37,14 +37,15 @@
             padding-top: 20px;
             background-color: var(--cor1);
             width: 500px;
-            height: 100vw;
-            margin: auto;
+            height: fit-content;
+            margin:  auto;
             text-align: center;
             font-size: larger;
             border-radius: 50px;
             background: #F4E9ED;
             box-shadow:  15px 15px 30px #cfc6c9,
              -15px -15px 30px #ffffff;
+             padding-bottom: 50px;
         }
         
 
@@ -52,7 +53,7 @@
 </head>
 <body>
     <h1>Sing up</h1>
-    <form action="cadastro.php" autocomplete="off" method="post"> <!--GET- 3k bytes e totalmente sem segurança-->
+    <form action="cadastro.php" autocomplete="off" method="get"> <!--GET- 3k bytes e totalmente sem segurança-->
         <!--POST- MAIS SEGURANÇA E MAIS DE 3K BYTES E ENVIA ARQUIVOS-->
         <p>
             <label for="inome">*Nome: </label>
@@ -63,9 +64,22 @@
             <input type="text" name="sobrenome" id="isobrenome" placeholder="Insira seu sobrenome"> 
         </p>
         <p>
+            <label for="ialtura">Altura: </label>
+            <input type="number" name="altura" id="ialtura" placeholder="Sua altura em cm" step="0.1">
+        </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="altura" id="ialtura" placeholder="Sua idade" step="1" min="18" max="100">
+        </p>
+        <p>
+            <label for="idata">Data de nascimento</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
             <label for="isenha">*Senha:</label>
             <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" size="10" autocomplete="new-password">
         </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
