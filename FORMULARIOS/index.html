@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        :root{
+            --cor1: #f4e9ed;
+            --cor2: #e2d0d6;
+            --cor3: #9b5b7d;
+            --cor4: #8b4869;
+            --cor5: #d1ae6c;
+        }
+        *{
+            font-family: consolas;
+        }
+        body{
+            background-color: var(--cor2);
+        }
+        h1{
+            text-align: center;
+            margin: 50px auto;
+            color: var(--cor4);
+            background-color: var(--cor5);
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 10px;
+            
+        }
+        p{
+            color: var(--cor3);
+        }
+        form{
+            padding-top: 20px;
+            background-color: var(--cor1);
+            width: 500px;
+            height: 100vw;
+            margin: auto;
+            text-align: center;
+            font-size: larger;
+            border-radius: 50px;
+            background: #F4E9ED;
+            box-shadow:  15px 15px 30px #cfc6c9,
+             -15px -15px 30px #ffffff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Sing up</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> <!--GET- 3k bytes e totalmente sem segurança-->
+        <!--POST- MAIS SEGURANÇA E MAIS DE 3K BYTES E ENVIA ARQUIVOS-->
+        <p>
+            <label for="inome">*Nome: </label>
+            <input type="text" name="nome" id="inome" placeholder="Insira seu nome" required autocomplete="username">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome" placeholder="Insira seu sobrenome"> 
+        </p>
+        <p>
+            <label for="isenha">*Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15" size="10" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
