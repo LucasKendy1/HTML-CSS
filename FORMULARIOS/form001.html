@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        fieldset{
+            border: 2px solid black;
+        }
+        .jogos{
+            width: 50px;
+            height: 50px;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Awards - Lucão version</h1>
+    
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" value="M" id="isexomas"><label for="isexomas">Masculino</label>
+
+            <input type="radio" name="sexo" value="F" id="isexofem"><label for="isexofem">Feminino</label>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados de contato</legend>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre expressao regular RegEx-->
+        <br>
+        <fieldset>
+            <legend>Jogos do ano - 2023</legend>
+            <p>
+                <input class='jogos' type="checkbox" name="jogo1" id="ijogo1"> 
+                <label for="ijogo7">Atomic Heart</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo2" id="ijogo2"> <label for="ijogo7">Forspoken</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo3" id="ijogo3"> <label for="ijogo7">Hogwards Legacy</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo4" id="ijogo4"> <label for="ijogo7">Hi-Fi Rush</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo5" id="ijogo5"> <label for="ijogo7">High On Life</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo6" id="ijogo6"> <label for="ijogo7">Fears to Fathon - Carson House</label> <br>
+
+                <input class='jogos' type="checkbox" name="jogo7" id="ijogo7"> <label for="ijogo7">Rocket League</label> <br>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </fieldset>
+        <br>
+        <form action="" method="post">
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+
+                <br>
+
+                <label for="inivel">Nivel</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="5">
+
+                <br>
+
+                <label for="iarquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="iarquivo">
+            </p>
+        </form>
+    </form>
+</body>
+</html>

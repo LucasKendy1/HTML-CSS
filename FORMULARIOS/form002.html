@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        fieldset{
+            border: 2px solid black;
+        }
+        .jogos{
+            width: 50px;
+            height: 50px;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <p>
+                <label for="iestado">Estado</label>
+                <select name="estado" id="iestado" required>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                    <optgroup label="Região Suldeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande Do Sul</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                    <option value="" selected>---Escolha---</option>
+                </select>
+
+                <br>
+
+                <label for="iprofissao">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="YT">Youtuber</option>
+                    
+                </datalist>
+
+                <br>
+
+                <textarea name="Mensagem" id="imensagem" cols="30" rows="10">Coloque uma mensagem aqui</textarea>
+            </p>
+
+            <p>
+                <input type="submit">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
